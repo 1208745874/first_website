@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>灵境人格图谱 | 专业多维评估</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="hero">
+        <h1>
+            🧠 灵境人格图谱
+            <span>Pro+</span>
+        </h1>
+        <p>基于多维认知模型 · 15维深度解构 · 官方认证范式</p>
+    </div>
+
+    <!-- 开始首页 -->
+    <div id="startPage" class="page active-page">
+        <div style="text-align: center; padding: 1rem 0 1rem;">
+            <div style="background: #eef2ff; border-radius: 2rem; padding: 1.8rem; margin-bottom: 1.5rem;">
+                <span style="font-size: 3rem;">📋</span>
+                <h3 style="margin: 0.5rem 0;">欢迎参与专业人格评估</h3>
+                <p style="color: #2c3e66; max-width: 80%; margin: 0.8rem auto;">本测试包含三大维度共15道经典情境题，精准映射您的认知风格与决策模式。全程匿名，结果基于AI常模分析。</p>
+                <hr style="margin: 1.2rem 0; opacity: 0.3;">
+                <p style="font-size: 0.85rem;">⏱️ 预计耗时 3-5 分钟 &nbsp;|&nbsp; ✅ 每类完成后自动进入下一阶段</p>
+            </div>
+            <button id="startBtn" class="btn btn-primary" style="padding: 0.9rem 2.5rem; font-size: 1rem;">🚀 开始评估</button>
+        </div>
+        <footer>© 灵境研究院 · 心理测量学认证</footer>
+    </div>
+
+    <!-- 三个分类页面容器 (动态生成题目) -->
+    <div id="category1Page" class="page"></div>
+    <div id="category2Page" class="page"></div>
+    <div id="category3Page" class="page"></div>
+
+    <!-- 结果页面（完成所有题目后的最终页） -->
+    <div id="resultPage" class="page">
+        <div style="text-align: center; padding: 1rem 0 0.5rem;">
+            <div style="background: #eef2ff; border-radius: 2rem; padding: 1.8rem; margin-bottom: 1.5rem;">
+                <span style="font-size: 2.8rem;">✨</span>
+                <h3>分析已完成</h3>
+                <p style="margin: 1rem 0; font-size: 1rem; color: #2d4a6e;">您的15维度人格画像已生成，结合神经网络模型与抽象直觉算法，深层数据已就绪。</p>
+                <div id="finalReportSummary" style="background: white; border-radius: 1.5rem; padding: 1rem; margin: 1.2rem 0; font-size: 0.9rem; color: #1f3a5f;">
+                    准备解锁终极的解析报告…
+                </div>
+                <button id="revealVideoBtn" class="btn btn-primary result-btn" style="background: #b5532c;">🌀 点击查看测评结果</button>
+                <!--<p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.7;">点击后将开启高维抽象反馈环节</p>-->
+            </div>
+        </div>
+        <footer>测评结果基于最新动态权重模型，仅限个人参考</footer>
+    </div>
+</div>
+
+<!-- 极简全屏视频层：只有视频，无任何多余UI -->
+<div id="videoFullscreen" class="video-fullscreen">
+    <video id="abstractVideo" controls playsinline></video>
+</div>
+
+<script src="humour.js"></script>
+</body>
+</html>
