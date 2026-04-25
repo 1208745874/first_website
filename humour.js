@@ -100,6 +100,7 @@ function renderCategory(categoryId, containerDiv) {
         });
 
         html += `</div></div>`;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     //导航按钮区域
